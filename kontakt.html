@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- utf-8 Zeichensatz ermöglicht Schreibweise von z.B. Umlauten (statt &Uuml;) -->
+<meta name="description" content="Testseite von Sebastian">
+<!--Beschreibungstext der bei Suchmaschinen unter dem Link(Dokumententitel) angezeigt wird -->
+<meta name="robots" content="index, follow, archive">
+<!--Definition, dass die aufgerufene Seite auch auf kleineren Devices wie Smartphones über die volle Breite angezeit wird -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Kontakt</title>
+
+<style>
+
+
+form {
+  width: 100%;
+  max-width: 600px;
+  padding: 2%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.textfeld, .submitbutton {
+  margin: 2%;
+}
+.textfeld label {
+  display: block;
+  font-weight: bold;
+}
+.textfeld input, .textfeld textarea {
+  width: 100%;
+  padding: 6px 12px;
+  display: block;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.textfeld input:focus, .textfeld textarea:focus {
+    border-color: #66AFE9;
+    outline: 0px none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+label {
+  cursor: pointer;
+}
+.submitbutton  input{
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.submitbutton input:hover, .submitbutton input:focus, .submitbutton input:active {
+  color: #333;
+  background-color: #E6E6E6;
+  border-color: #ADADAD;
+}
+.textfeld input, .submitbutton {
+  display: inline-block;
+  width: 70%;
+}
+.textfeld label {
+  display: inline-block;
+  margin: 0 2% 0 0;
+  vertical-align: top;
+   width: 20%;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header id="oben">
+	<h1>Kontakt</h1>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="info.html">Info</a></li>
+			<li><a class="aktuell" href="kontakt.html">Kontakt</a></li>
+			<li><a href="impressum.html">Impressum</a></li>
+		</ul>
+	</nav>
+	</header>
+
+<main>
+	
+
+
+<form action="http://www.formular-chef.de/fc.cgi" method="post" enctype="multipart/form-data">
+
+<!-- method beschreibt die Verarbeitungsmethode ob der GET parameter (URL) oder POST (Dokumenten Header) übertragen werden soll -->
+
+	<div class="textfeld">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" placeholder="Bitte hier Ihren Namen eingeben" maxlength="30">
+	</div>
+	
+
+<!-- label als eindeutige Zuordnung von Formularnamen zu Feldern welche anschließend formatiert und eigens per Javascript angesprochen werden können -->
+
+	<div class="textfeld">
+		<label for="email">*E-Mail:</label>
+		<input type="email" name="email" id="email" placeholder="Bitte hier E-Mail eingeben" maxlength="30" required>
+	</div>
+
+
+	<div class="freitextfeld">
+		<label for="comment">Kommentar</label>
+		<textarea id="kommentar" name="kommentar" rows="5" cols="40">
+		</textarea>
+	</div>
+	
+	
+
+<input type="hidden" name="empfaenger" value="raetzel.sebastian@gmail.com"/>
+
+<!-- http://formular-chef.de/index.cgi?seite=docu_basis -->
+
+<div class="submitbutton">
+<input type="submit" value="Kontakt aufnehmen">
+</div>
+
+</form>
+
+</main>
+
+<footer>
+	<p><a href"#">nach oben</a></p>
+	<p>&copy;2017 </p>
+	</footer>
+
+</div>
+</body>
+</html>

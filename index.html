@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- utf-8 Zeichensatz ermöglicht Schreibweise von z.B. Umlauten (statt &Uuml;) -->
+<meta name="description" content="Testseite von Sebastian">
+<!--Beschreibungstext der bei Suchmaschinen unter dem Link(Dokumententitel) angezeigt wird -->
+<meta name="robots" content="index, follow, archive">
+<!--Definition, dass die aufgerufene Seite auch auf kleineren Devices wie Smartphones über die volle Breite angezeit wird -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testpage</title>
+<!-- https://fonts.google.com -->
+<link href="https://fonts.googleapis.com/css?family=Bellefair|Permanent+Marker" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+
+<div>
+	<header id="oben">
+	<h1>Fussballbundesliga</h1>
+	<nav>
+		<ul>
+			<li><a class="aktuell" href="index.html">Home</a></li>
+			<li><a href="info.html">Info</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="impressum.html">Impressum</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>
+	<section class="einleitung">
+	<h2>Willkommen</h2>
+	<p>Informationen rund ums Runde</p>
+	<a href="http://www.fussballbundesli.ga">Direktlink</a>
+<br>
+		<h1 id="aktDatum"></h1>
+		<script>
+		let datum = new Date();
+		let tag = datum.getDate();
+		let monat = datum.getMonth() + 1;
+		let jahr = datum.getFullYear();
+		//Darstellung in einer Fehlerbox wäre: alert(tag + "." + monat + "." + jahr);
+		let datumsfeld = document.getElementById("aktDatum");
+		datumsfeld.innerHTML = tag + "." + monat + "." + jahr;
+		</script>
+
+		<!-- Monate werden in JS gezählt startend mit Januar = 0 deshalb +1-->
+	
+	</section>
+	<div class="zeile cf">
+		<article>
+		<h2>Sommer Vorbereitung</h2>
+		<p class="hinweis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Suspendisse ullamcorper, erat ac tristique vulputate, eros urna aliquet elit,
+		ac luctus sem felis nec est. Nunc ornare, felis feugiat condimentum placerat,
+		massa eros ornare sem, sit amet efficitur odio odio vitae diam. Suspendisse rutrum tortor id faucibus rhoncus.</p>
+		<p>Vivamus at sapien eu nisl ullamcorper maximus sed at lacus. Praesent consequat tempor finibus. 
+		In hac habitasse platea dictumst. Nunc mollis massa non vehicula ornare. Praesent sapien augue,
+		auctor eleifend ultricies a, congue ac nisl.</p> 
+		</article>
+		<article>
+		<h2>Hinrunde</h2>
+		<p>Suspendisse potenti. Curabitur sit amet purus non nunc iaculis commodo in ut nisi.
+		Suspendisse potenti. Nullam vitae erat metus.</p> 
+		<p>Orci varius natoque penatibus et magnis dis parturient montes,
+		nascetur ridiculus mus. Mauris turpis erat, eleifend sit amet auctor consectetur, placerat fermentum nisl.
+		Maecenas a molestie magna. Nunc eget aliquet tellus.</p>
+		</article>
+	</div>
+	<div class="zeile cf">
+		<article>
+		<h2>Winter Vorbereitung</h2>
+		<p class="hinweis">Cras et arcu cursus, tristique arcu eget, consequat est. Mauris pretium leo porttitor, ornare enim ac,
+		consectetur odio. Sed eu tellus in turpis sagittis consectetur sed nec velit. Etiam interdum vel sem ut efficitur.
+		<img class="bildlinks" src="./assets/gemischtes-doppel_freddie.jpg" style="width: 50%; height: 50%" alt="Bild1">
+		Aliquam lobortis massa in ex feugiat rhoncus. Etiam tellus massa, dictum non varius ut, scelerisque quis massa.</p>
+		<p>Nam sit amet accumsan ipsum, vitae auctor lacus. Sed non ipsum scelerisque, tempor ipsum ac, venenatis nisi.
+		Phasellus at enim at ipsum luctus venenatis. Curabitur eget neque imperdiet, pellentesque tortor et, auctor metus.
+		Curabitur tempus rutrum consequat. Praesent placerat erat eget velit volutpat, sit amet rhoncus dui euismod.
+		<img class="bildlinks" src="./assets/gemischtes-doppel_fußball.jpg" style="width: 50%; height: 50%" alt="Bild2">
+		Cras vel luctus lorem, non commodo libero. Nunc sed lacus non libero lacinia molestie.</p>
+		</article>
+		
+		<article>
+		<h2>Rückrunde</h2>
+		<p>Sed sed ornare leo. Praesent fringilla ex orci, quis lobortis est consequat a. Nullam leo tellus,
+		malesuada ut turpis vel, maximus accumsan mauris. Sed in aliquet magna.
+		<img class="bildrechts" src="./assets/gemischtes-doppel_freddie.jpg" style="width: 50%; height: 50%" alt="Bild1">
+		Nulla eu lectus quis massa elementum aliquet vitae in orci. In facilisis ultrices magna,
+		eu aliquam lacus. Etiam a ligula eget quam fringilla feugiat.</p>
+		<p>Aenean in enim et massa scelerisque lobortis non nec lorem. Aenean tempor ornare eros vestibulum dictum.
+		Maecenas gravida velit sed consequat ultricies.
+		<img class="bildrechts" src="./assets/gemischtes-doppel_fußball.jpg" style="width: 50%; height: 50%" alt="Bild2">
+		Donec vitae tincidunt sapien. Cras non auctor enim.
+		Proin imperdiet enim id tristique fermentum.</p> 
+		</article>
+	</div>	
+	</main>
+	<footer>
+	<p><a href="#oben">nach oben</a></p>
+	<p>&copy;2017 </p>
+	</footer>
+	</div>
+</div>
+
+
+<!-- jquery von deren CDN eingebunden -->
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<script src="jqueryeinblenden.js"></script>
+<script src="smoothscroll.js"></script>
+
+
+<!-- 
+
+HTML AUSKLAPPMENÜ
+<details open>
+	<summary>HTML</summary>
+	<a href="http://webkompetenz.wikidot.com/docs:html-handbuch"target="blank" >Weitere Informationen zu HTML</a>
+</details>
+
+<details>
+	<summary>HTML</summary>
+	<a href="http://webkompetenz.wikidot.com/docs:html-handbuch"target="blank" >Weitere Informationen zu HTML</a>
+</details>
+-->
+
+</body>
+</html>
