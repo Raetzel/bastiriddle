@@ -20,11 +20,12 @@
 
 <div>
 	<header id="oben">
-	<h1>Fussballbundesliga</h1>
+	<h1>Sebastian Rätzel</h1>
 	<nav>
 		<ul>
-			<li><a class="aktuell" href="index.html">Home</a></li>
-			<li><a href="info.html">Info</a></li>
+			<li><a class="aktuell" href="index.html">Über Mich</a></li>
+			<li><a href="experience.html">Berufserfahrung</a></li>
+            <li><a href="education.html">Ausbildung & Qualifikationen</a></li>
 			<li><a href="kontakt.html">Kontakt</a></li>
 			<li><a href="impressum.html">Impressum</a></li>
 		</ul>
@@ -32,27 +33,61 @@
 	</header>
 	<main>
 	<section class="einleitung">
-	<h2>Willkommen</h2>
-	<p>Informationen rund ums Runde</p>
-	<a href="http://www.fussballbundesli.ga">Direktlink</a>
-<br>
-		<h1 id="aktDatum"></h1>
-		<script>
-		let datum = new Date();
-		let tag = datum.getDate();
-		let monat = datum.getMonth() + 1;
-		let jahr = datum.getFullYear();
-		//Darstellung in einer Fehlerbox wäre: alert(tag + "." + monat + "." + jahr);
-		let datumsfeld = document.getElementById("aktDatum");
-		datumsfeld.innerHTML = tag + "." + monat + "." + jahr;
-		</script>
+        
+<div class="grid">
+  <div class="project-teaser">
+    <figure class="hover-effect">
+        <img src="assets/peru.jpg" alt="img01"/>
+        <figcaption>
+          <span class="category">Einstellung</span>
+          <h2>Welt<span>offen</span></h2>
+          <h3>für neue Ideen, Kulturen, Impulse</h3>
+          <p>Wie hier weit oben in der Andenstadt Cusco (Peru).</p>
+          <a href="#">View more</a>
+        </figcaption>			
+    </figure>
+  </div>
+   <div class="project-teaser">
+    <figure class="hover-effect">
+        <img src="assets/business.jpg" alt="img02"/>
+        <figcaption>
+          <span class="category">Expertise</span>
+          <h2>IT-<span>Projekt</span></h2>
+          <h3>Management</h3>
+          <p>Website & App Projekte aller Art (Branchen- und Technologieübergreifend)</p>
+          <a href="#">View more</a>
+        </figcaption>			
+    </figure>
+  </div>
+   <div class="project-teaser">
+    <figure class="hover-effect">
+        <img src="assets/sunny.jpg" alt="img03"/>
+        <figcaption>
+          <span class="category">Charakteristik</span>
+          <h2>Freundlichkeit <span></span></h2>
+          <h3>Als Basis für Freude, Ehrgeiz und Erolg</h3>
+          <p>Ein sonniges Gemüt, nicht nur wie hier in der Sonne Griechenlands, hilft mir und den Mitmenschen im Alltag weiter.</p>
+          <a href="#">View more</a>
+        </figcaption>			
+    </figure>
+  </div>
+</div>	
 
-		<!-- Monate werden in JS gezählt startend mit Januar = 0 deshalb +1-->
-	
+
+       
+  <!--      
+	<h3>Willkommen</h3>
+ 	<p>Auf der Website zu meiner Person</p>
+	<a href="https://www.xing.com/profile/Sebastian_Raetzel">XING-Profilseite</a>
+<br>
+        -->
+        
+
+        
 	</section>
 	<div class="zeile cf">
 		<article>
-		<h2>Sommer Vorbereitung</h2>
+		<h2>Wer bist du?</h2>
 		<p class="hinweis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 		Suspendisse ullamcorper, erat ac tristique vulputate, eros urna aliquet elit,
 		ac luctus sem felis nec est. Nunc ornare, felis feugiat condimentum placerat,
@@ -62,7 +97,7 @@
 		auctor eleifend ultricies a, congue ac nisl.</p> 
 		</article>
 		<article>
-		<h2>Hinrunde</h2>
+		<h2>Was zeichnet dich aus?</h2>
 		<p>Suspendisse potenti. Curabitur sit amet purus non nunc iaculis commodo in ut nisi.
 		Suspendisse potenti. Nullam vitae erat metus.</p> 
 		<p>Orci varius natoque penatibus et magnis dis parturient montes,
@@ -72,7 +107,7 @@
 	</div>
 	<div class="zeile cf">
 		<article>
-		<h2>Winter Vorbereitung</h2>
+		<h2>Was interessiert dich?</h2>
 		<p class="hinweis">Cras et arcu cursus, tristique arcu eget, consequat est. Mauris pretium leo porttitor, ornare enim ac,
 		consectetur odio. Sed eu tellus in turpis sagittis consectetur sed nec velit. Etiam interdum vel sem ut efficitur.
 		<img class="bildlinks" src="./assets/gemischtes-doppel_freddie.jpg" style="width: 50%; height: 50%" alt="Bild1">
@@ -85,7 +120,7 @@
 		</article>
 		
 		<article>
-		<h2>Rückrunde</h2>
+		<h2>Wo kann man noch mehr über dich finden?</h2>
 		<p>Sed sed ornare leo. Praesent fringilla ex orci, quis lobortis est consequat a. Nullam leo tellus,
 		malesuada ut turpis vel, maximus accumsan mauris. Sed in aliquet magna.
 		<img class="bildrechts" src="./assets/gemischtes-doppel_freddie.jpg" style="width: 50%; height: 50%" alt="Bild1">
@@ -131,6 +166,5 @@ HTML AUSKLAPPMENÜ
 	<a href="http://webkompetenz.wikidot.com/docs:html-handbuch"target="blank" >Weitere Informationen zu HTML</a>
 </details>
 -->
-
 </body>
 </html>

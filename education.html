@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- utf-8 Zeichensatz ermöglicht Schreibweise von z.B. Umlauten (statt &Uuml;) -->
+<meta name="description" content="Testseite von Sebastian">
+<!--Beschreibungstext der bei Suchmaschinen unter dem Link(Dokumententitel) angezeigt wird -->
+<meta name="robots" content="index, follow, archive">
+<!--Definition, dass die aufgerufene Seite auch auf kleineren Devices wie Smartphones über die volle Breite angezeit wird -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testpage</title>
+<!-- https://fonts.google.com -->
+<link href="https://fonts.googleapis.com/css?family=Bellefair|Permanent+Marker" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+
+<div>
+	<header id="oben">
+	<h1>Sebastian Rätzel</h1>
+	<nav>
+		<ul>
+			<li><a class="aktuell" href="index.html">Über Mich</a></li>
+			<li><a href="experience.html">Berufserfahrung</a></li>
+            <li><a href="education.html">Ausbildung & Qualifikationen</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="impressum.html">Impressum</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>
+		
+<div class="cycle-slideshow"
+data-cycle-fx="scrollHorz"
+    data-cycle-pause-on-hover="true"
+    data-cycle-speed="600"
+	>
+    <img src="./assets/gemischtes-doppel_fußball.jpg">
+	<img src="./assets/gemischtes-doppel_freddie.jpg">    
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+<!-- http://jquery.malsup.com/cycle2/demo/basic.php -->
+
+<script src="smoothscroll.js"></script>
+
+
+	</main>
+	<footer>
+	<p><a href="#oben">nach oben</a></p>
+	<p>&copy;2017 </p>
+	</footer>
+	</div>
+</div>
+
+
+<!-- jquery von deren CDN eingebunden -->
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<script src="jqueryeinblenden.js"></script>
+
+<!-- 
+
+HTML AUSKLAPPMENÜ
+<details open>
+	<summary>HTML</summary>
+	<a href="http://webkompetenz.wikidot.com/docs:html-handbuch"target="blank" >Weitere Informationen zu HTML</a>
+</details>
+
+<details>
+	<summary>HTML</summary>
+	<a href="http://webkompetenz.wikidot.com/docs:html-handbuch"target="blank" >Weitere Informationen zu HTML</a>
+</details>
+-->
+
+</body>
+</html>
